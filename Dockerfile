@@ -1,5 +1,5 @@
 FROM alpine:3.11
-#FROM alpine:3.13
+#FROM alpine:3.13 para amd64 y  alpine:3.11 para arm
 # renovate: datasource=github-releases depName=zerotier/ZeroTierOne
 ENV ZEROTIER_VERSION=1.6.3
 
