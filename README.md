@@ -2,8 +2,24 @@
 
 Docker container to run ZeroTier One using Docker.
 
-## Run
 
+## For ARM and Raspberry
+
+```
+ docker run \                                                                                                                                                 
+  -d \
+  --name zerotier \
+  --device /dev/net/tun \
+  --net host \
+  --cap-add NET_ADMIN \
+  --cap-add SYS_ADMIN \
+  -v $HOME/docker/zerotier-alpine:/var/lib/zerotier-one \
+    ugeek/zerotier:arm-1.6.3
+```
+
+
+
+## Run
 Spawn the container in background:
 
 ```bash
