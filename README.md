@@ -35,6 +35,30 @@ docker run \
   henrist/zerotier-one
 ```
 
+
+
+## docker-compose
+
+```
+services:
+  zerotier:
+    image: ugeek/zerotier:arm
+    container_name: zerotier
+    devices:
+      - /dev/net/tun
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+    volumes:
+      - $HOME/docker/zerotier:/var/lib/zerotier-one
+
+```
+
+
+
+
+
 Show status of the service:
 
 ```bash
