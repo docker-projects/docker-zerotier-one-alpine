@@ -1,6 +1,11 @@
 FROM alpine:3.11
 #FROM alpine:3.13 para amd64 y  alpine:3.11 para arm
 # renovate: datasource=github-releases depName=zerotier/ZeroTierOne
+
+
+# Cambiar nº versión y commit de la versión
+
+
 ENV ZEROTIER_VERSION=1.6.3
 
 ENV ZEROTIER_COMMIT=7c2066c25888b8aa4f398fcf6f55e747656b0854
