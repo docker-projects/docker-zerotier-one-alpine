@@ -6,9 +6,9 @@ FROM alpine:3.11
 # Cambiar nº versión y commit de la versión
 
 
-ENV ZEROTIER_VERSION=1.6.3
+ENV ZEROTIER_VERSION=1.6.5
 
-ENV ZEROTIER_COMMIT=7c2066c25888b8aa4f398fcf6f55e747656b0854
+ENV ZEROTIER_COMMIT=e8f7d5ef9e7ba6be0b2163cfa31f8817ba5b18f4
 
 RUN set -eux; \
     apk add --no-cache \
